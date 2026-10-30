@@ -107,7 +107,7 @@ function onTrackChange() {
   $('#lyArtist').textContent = t ? t.artist : '';
   const n = t ? t.title.length : 0;                      // long names get a smaller font so they wrap fully
   for (const el of [$('#title'), $('#lyTitle')]) { el.classList.toggle('t-md', n > 34 && n <= 60); el.classList.toggle('t-sm', n > 60); }
-  document.title = t ? t.title + ' · Cloudy Music' : 'Cloudy Music';
+ document.title = t ? t.title + ' · Snowy Music' : 'Snowy Music';
   setArt(t ? t.art : '');
   if (S.ytmLyrics.key !== S.key) S.ytmLyrics = { key: '', text: '' };   // never show old song's lyrics
   S.lyShown = ''; S.lyIdx = -2;
