@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Cloudy Music Bridge",
+  "version": "1.2.0",
+  "description": "Connects YouTube Music in this browser to your local Cloudy Music page (localhost or GitHub Pages).",
+  "host_permissions": [
+    "https://music.youtube.com/*",
+    "http://localhost:8765/*",
+    "http://127.0.0.1:8765/*",
+    "https://*.github.io/*"
+  ],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    { "matches": ["https://music.youtube.com/*"], "js": ["ytm-content.js"], "run_at": "document_idle" },
+    { "matches": ["http://localhost:8765/*", "http://127.0.0.1:8765/*", "https://*.github.io/*"], "js": ["cloudy-content.js"], "run_at": "document_start" }
+  ]
+}
