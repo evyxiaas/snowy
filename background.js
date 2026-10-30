@@ -1,7 +1,7 @@
-/* Cloudy Music Bridge - background service worker (stateless router).
+  /* Snowy Music Bridge - background service worker (stateless router).
  *
  * YouTube Music tab --YTM_STATE / YTM_LYRICS--> here --> every Cloudy tab
- * Cloudy tab --CLOUDY_COMMAND--> here --COMMAND--> the YouTube Music tab --result--> back
+ * Snowy tab --CLOUDY_COMMAND--> here --COMMAND--> the YouTube Music tab --result--> back
  *
  * Messages are only accepted from the exact origins below (sender.url is set by the browser,
  * so a random website cannot pretend to be one of them).
