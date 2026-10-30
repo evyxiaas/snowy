@@ -1,4 +1,4 @@
-/* Cloudy Music Bridge - content script injected into the Cloudy page (localhost:8765 or GitHub Pages).
+/* Snowy Music Bridge - content script injected into the Snowy page (localhost:8765 or GitHub Pages).
  * It is the only piece that can talk to both the page (postMessage) and the extension (chrome.runtime).
  *
  * page -> here:  {source:'cloudy-page', type:'HELLO'|'GET_STATE'|'COMMAND', id, command, value}
